@@ -8,3 +8,9 @@ Put this in your /etc/sudoers file
 ````
 %www    ALL=(ALL)   NOPASSWD: /path/to/mail-catcher/catcher.php
 ````
+
+In /etc/php.ini, set the sendmail path as
+
+````
+sendmail_path="sudo -u olav /path/to/mail-catcher/catcher.php"
+````
